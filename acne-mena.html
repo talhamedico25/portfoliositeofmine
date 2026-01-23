@@ -1,1 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <meta
+      name="description"
+      content="The Acne Revolution in Pakistan: Lessons from the MENA Consensus — notes by M Talha Fayyaz."
+    />
 
+    <title>tf. — blog / dermatocosmetics vs acne medications</title>
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Ctext x='10' y='42' font-family='JetBrains Mono, monospace' font-size='28' fill='%23dcdcdc'%3Etf%3C/text%3E%3Ccircle cx='52' cy='44' r='3' fill='%23ff2a2a'/%3E%3C/svg%3E"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --bg: #000000;
+        --panel: #070707;
+        --text: #b7b7b7;
+        --muted: #8b8b8b;
+        --edge: rgba(255, 255, 255, 0.08);
+        --edge-2: rgba(255, 255, 255, 0.12);
+        --accent: #ff2a2a;
+        --accent-soft: rgba(255, 42, 42, 0.16);
+        --maxw: 860px;
+        --radius: 12px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          "JetBrains Mono",
+          ui-monospace,
+          SFMono-Regular,
+          Menlo,
+          Monaco,
+          Consolas,
+          "Liberation Mono",
+          "Courier New",
+          monospace;
+        line-height: 1.75;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #d1d1d1;
+      }
+
+      ::selection {
+        background: var(--accent-soft);
+        color: #e7e7e7;
+      }
+
+      .wrap {
+        max-width: var(--maxw);
+        margin: 0 auto;
+        padding: 0 18px;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 40;
+        background: rgba(0, 0, 0, 0.86);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--edge);
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 0;
+        gap: 12px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: baseline;
+        gap: 10px;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+      }
+
+      .brand .logo {
+        font-size: 18px;
+        color: #dcdcdc;
+      }
+
+      .brand .dot {
+        color: var(--accent);
+      }
+
+      .crumbs {
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      main {
+        padding: 34px 0 70px;
+      }
+
+      .title {
+        margin: 0 0 10px;
+        font-size: clamp(20px, 3vw, 30px);
+        font-weight: 500;
+        color: #dddddd;
+      }
+
+      .meta {
+        font-size: 12px;
+        color: var(--muted);
+        margin-bottom: 18px;
+      }
+
+      .panel {
+        border: 1px solid var(--edge);
+        background: rgba(255, 255, 255, 0.02);
+        border-radius: var(--radius);
+        padding: 16px;
+      }
+
+      h2 {
+        font-size: 13px;
+        letter-spacing: 0.02em;
+        text-transform: lowercase;
+        color: #d1d1d1;
+        margin: 22px 0 10px;
+      }
+
+      p {
+        margin: 0;
+        font-size: 14px;
+        color: #c6c6c6;
+      }
+
+      p + p {
+        margin-top: 12px;
+      }
+
+      ul {
+        margin: 10px 0 0;
+        padding-left: 18px;
+        color: #c6c6c6;
+        font-size: 14px;
+      }
+
+      .back {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 18px;
+        padding: 10px 12px;
+        border: 1px solid var(--edge);
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.02);
+        color: #d2d2d2;
+        font-size: 13px;
+      }
+
+      .back:hover {
+        border-color: var(--edge-2);
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .back .arrow {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="wrap">
+        <div class="nav">
+          <a class="brand" href="./index.html#home" aria-label="Go to home">
+            <span class="logo">tf<span class="dot">.</span></span>
+          </a>
+          <div class="crumbs">blog / acne</div>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <h1 class="title">The Acne Revolution in Pakistan: Lessons from the MENA Consensus</h1>
+      <div class="meta">draft • text-first • calm notes</div>
+
+      <div class="panel">
+        <p>
+          In Pakistan, acne is often dismissed as a "teenage phase," but for many, it’s a chronic condition
+          that leaves a lasting impact long after the breakout clears. A new regional consensus on <strong>dermatocosmetics</strong>
+          is changing how we treat acne in the Middle East and North Africa (MENA)—and its findings are
+          a perfect blueprint for Pakistani skin. 
+          
+          Recent data shows that<strong>87.2% of patients</strong> in regions like ours experience
+          <strong>Post-Inflammatory Hyperpigmentation (PIH)</strong>—the dark spots that linger for months
+          or years. In Pakistan, where Fitzpatrick skin types III-VI (melanin-rich skin) are dominant, this
+          isn't just a skin issue; it's a major psychological burden.
+        </p>
+
+        <h2>Why Pakistan Needs a "Skincare-First" Strategy</h2>
+        <p>
+          While we often jump straight to strong antibiotics, research from both MENA and Pakistan suggests
+          we are missing a critical step: <strong>The Skin Barrier</strong>
+        </p>
+        <ul>
+          <li><strong>The Antibiotic Crisis:</strong>In Pakistan, self-medication with antibiotics for acne is alarmingly high,
+            with some studies showing rates up to 50-61%. This fuels global antibiotic resistance and often fails to address the underlying 
+            oiliness and scarring.</li>
+          <li><strong>The Oily-Climate Combo:</strong>Like the MENA region, Pakistan’s intense heat and humidity lead to overactive oil glands
+            in >50% of acne sufferers, causing seasonal flare-ups in the summer.</li>
+          <li><strong>The Psychological Toll:</strong>A study in Lahore found that Pakistani acne patients suffer from significantly higher anxiety
+            (HADS scores of 17.6 vs. 6.7 in controls),largely due to the visibility of the lesions and subsequent spotting.</li>
+          <li>Simple routines that keep consistency high</li>
+        </ul>
+
+        <h2>Suggestions for the Pakistani Routine (PAK)</h2>
+        <p>
+          Based on the MENA consensus and local clinical realities, here is how you should rethink your acne management:
+        </p>
+        <h2>1. P—Protect from PIH (Sunscreen is NOT Optional)</h2>
+        <p>In Pakistan, we have a massive "Sunscreen Gap," especially among men. UV exposure is the #1 reason why a small 
+          pimple turns into a permanent dark spot.
+        
+       <strong>Suggestion:</strong>Use a "sebum-regulating" or "dry-touch" sunscreen. If you are using acne meds like Adapalene
+          or Retinoids, your skin is extra-sensitive to the sun. No sunscreen = guaranteed dark spots.</p>
+        
+        <h2>2. A—Adherence via Adjuvants</h2>
+        <p>One of the biggest reasons Pakistani patients stop their prescription treatment is "skin burn" or extreme dryness.
+        
+       <strong>Suggestion:</strong>Use a barrier-repair moisturizer with <strong>Niacinamide</strong>or <strong>Ceramides</strong>.
+          The ACTUO study showed that using dermocosmetics alongside meds makes you 2.2 times more likely to finish your treatment successfully.</p>
+
+        <h2>3. K—Keep the pH Balanced</h2>
+        <p>Many traditional soaps used in Pakistan have a high alkaline pH, which strips the skin and triggers more oil production.
+        
+       <strong>Suggestion:</strong>Switch to a "Syndet" or a soap-free cleanser with a pH of <strong>4.7–5.75.</strong> This preserves
+          the "acid mantle" and prevents the growth of acne-causing bacteria.</p>
+        <ul>
+          <li>Retinoids for comedones and long-term control</li>
+          <li>Benzoyl peroxide for antimicrobial effect</li>
+          <li>Antibiotics (carefully) for inflammatory acne</li>
+          <li>Systemic options when severity warrants it</li>
+        </ul>
+
+        <h2>The Verdict</h2>
+        <p>
+          Dermocosmetics are not "fancy lotions"—they are therapeutic pillars. For a country like Pakistan, where medical costs and antibiotic
+          resistance are rising, focusing on the PAK framework (Protect, Adherence, Keep pH balanced) offers a sustainable way to clear skin and keep it clear.
+        </p>
+
+        <a class="back" href="./index.html#acne-mena">
+          <span class="arrow">←</span> back to site
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
